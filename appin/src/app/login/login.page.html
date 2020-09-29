@@ -1,9 +1,48 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+      <ion-chip color="danger" [class.button-disabled]="true">
+        <ion-icon name="finger-print-outline"></ion-icon>
+        <ion-label>LOGIN</ion-label>
+      </ion-chip>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    <ion-card-title>Card Title</ion-card-title>
+  </ion-card-header>
 
+  <ion-card-content>
+    <ion-list>
+      <ion-item color="danger">
+        <ion-label>Institución</ion-label>
+          <ion-select value="u1" okText="Listo" cancelText="Cancelar">
+          <ion-select-option value="u1">U.Valle Cartago</ion-select-option>
+          <ion-select-option value="u2">U.Valle Zarzal</ion-select-option>
+          <ion-select-option value="u3">U.Valle Yumbo</ion-select-option>
+          <ion-select-option value="u4">U.Valle Tuluá</ion-select-option>
+          <ion-select-option value="u5">U.Valle Buga</ion-select-option>
+          <ion-select-option value="u6">U.Valle Caicedonia</ion-select-option>
+          <ion-select-option value="u7">U.Valle Norte del Cauca</ion-select-option>
+          <ion-select-option value="u8">U.Valle Pacífico</ion-select-option>
+          <ion-select-option value="u9">U.Valle Palmira</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tipo de Documento</ion-label>
+          <ion-select value="td1" okText="Listo" cancelText="Cancelar">
+          <ion-select-option value="td1">Cedula de ciudadanía</ion-select-option>
+          <ion-select-option value="td2">Tarjeta de identidad</ion-select-option>
+          <ion-select-option value="td3">Cedula extranjera</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item color="danger">
+        <ion-label position="floating">Número de documento</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
 </ion-content>
