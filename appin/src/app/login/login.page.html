@@ -1,6 +1,6 @@
-<ion-header>
+<ion-header >
   <ion-toolbar>
-      <ion-chip color="danger" [class.button-disabled]="true">
+      <ion-chip color="danger">
         <ion-icon name="finger-print-outline"></ion-icon>
         <ion-label>LOGIN</ion-label>
       </ion-chip>
@@ -10,13 +10,12 @@
 <ion-content>
 <ion-card>
   <ion-card-header>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    <ion-card-title>Card Title</ion-card-title>
+   <img src="assets/login.png"/>
   </ion-card-header>
 
   <ion-card-content>
     <ion-list>
-      <ion-item color="danger">
+      <ion-item >
         <ion-label>Institución</ion-label>
           <ion-select value="u1" okText="Listo" cancelText="Cancelar">
           <ion-select-option value="u1">U.Valle Cartago</ion-select-option>
@@ -38,11 +37,18 @@
           <ion-select-option value="td3">Cedula extranjera</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-item color="danger">
+      <ion-item>
         <ion-label position="floating">Número de documento</ion-label>
         <ion-input></ion-input>
       </ion-item>
     </ion-list>
+    <ion-checkbox color="danger" checked="true"></ion-checkbox>  <ion-label>Recordar mis datos</ion-label>  
+    <ion-item>
+      <ion-button color="danger">Ingresar</ion-button>
+    </ion-item>
+    
+    <ion-router-link color="danger" href="www.google.com">Registrarse.</ion-router-link>
+
   </ion-card-content>
 </ion-card>
 </ion-content>
